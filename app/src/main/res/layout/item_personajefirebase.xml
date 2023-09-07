@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/cvPersonajeFirebase"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp"
+    android:layout_marginVertical="8dp"
+    android:backgroundTint="#FFDE02">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:padding="16dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgPersonajeFirebase"
+            android:layout_width="100dp"
+            android:layout_height="200dp"
+            android:contentDescription="@null"
+            android:src="@drawable/logo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvPersonajeFirebaseNombre"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/cambay"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="Nombre del Personaje"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintStart_toEndOf="@id/imgPersonajeFirebase"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvPersonajeFirebaseEdad"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:fontFamily="@font/cambay"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="Edad: 45 años"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintStart_toEndOf="@id/imgPersonajeFirebase"
+            app:layout_constraintTop_toBottomOf="@id/tvPersonajeFirebaseNombre" />
+
+        <TextView
+            android:id="@+id/tvPersonajeFirebaseGenero"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:fontFamily="@font/cambay"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="Género: Masculino"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintStart_toEndOf="@id/imgPersonajeFirebase"
+            app:layout_constraintTop_toBottomOf="@id/tvPersonajeFirebaseEdad" />
+
+        <TextView
+            android:id="@+id/tvPersonajeFirebaseOcupacion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/cambay"
+            android:maxLines="2"
+            android:text="Ocupación: Experto en comer donas"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imgPersonajeFirebase"
+            app:layout_constraintTop_toBottomOf="@id/tvPersonajeFirebaseGenero" />
+
+        <TextView
+            android:id="@+id/tvPersonajeFirebaseEstado"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:fontFamily="@font/cambay"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="Estado: Vivo"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintStart_toEndOf="@id/imgPersonajeFirebase"
+            app:layout_constraintTop_toBottomOf="@id/tvPersonajeFirebaseOcupacion" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

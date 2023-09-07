@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/thesimpsonsapp_graph"
+    app:startDestination="@id/simpsonsCharacterListFragment">
+
+    <fragment
+        android:id="@+id/simpsonsCharacterListFragment"
+        android:name="com.ef.monicagb.thesimpsonsapp.ui.fragment.SimpsonsCharacterListFragment"
+        android:label="fragment_simpsons_character_list"
+        tools:layout="@layout/fragment_simpsons_character_list" >
+        <action
+            android:id="@+id/action_simpsonsCharacterListFragment_to_simpsonsCharacterDetailFragment"
+            app:destination="@id/simpsonsCharacterDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/simpsonsFavoriteCharacterFragment"
+        android:name="com.ef.monicagb.thesimpsonsapp.ui.fragment.SimpsonsFavoriteCharacterFragment"
+        android:label="fragment_simpsons_favorite_character"
+        tools:layout="@layout/fragment_simpsons_favorite_character" >
+        <action
+            android:id="@+id/action_simpsonsFavoriteCharacterFragment_to_simpsonsCharacterDetailFragment"
+            app:destination="@id/simpsonsCharacterDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/firebaseListFragment"
+        android:name="com.ef.monicagb.thesimpsonsapp.ui.fragment.FirebaseListFragment"
+        android:label="fragment_firebase_list"
+        tools:layout="@layout/fragment_firebase_list" />
+    <fragment
+        android:id="@+id/configuracionCuentaFragment"
+        android:name="com.ef.monicagb.thesimpsonsapp.ui.fragment.ConfiguracionCuentaFragment"
+        android:label="fragment_configuracion_cuenta"
+        tools:layout="@layout/fragment_configuracion_cuenta" />
+    <fragment
+        android:id="@+id/simpsonsCharacterDetailFragment"
+        android:name="com.ef.monicagb.thesimpsonsapp.ui.fragment.SimpsonsCharacterDetailFragment"
+        android:label="fragment_simpsons_character_detail"
+        tools:layout="@layout/fragment_simpsons_character_detail" >
+        <argument
+            android:name="personaje"
+            app:argType="com.ef.monicagb.thesimpsonsapp.model.Personaje" />
+    </fragment>
+</navigation>

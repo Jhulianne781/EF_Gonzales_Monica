@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.AddCharacterActivity"
+    android:background="?attr/colorTertiaryContainer">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvCrearPersonaje"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agregar Personaje a Firebase"
+                android:textColor="?attr/colorPrimary"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilNombrePersonajeFirebase"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginHorizontal="24dp"
+                app:startIconDrawable="@drawable/ic_person"
+                app:endIconMode="clear_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvCrearPersonaje">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tietNombrePersonajeFirebase"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:hint="Personaje"
+                    android:maxLines="1" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilEdadPersonajeFirebase"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="24dp"
+                app:startIconDrawable="@drawable/ic_age"
+                app:endIconMode="clear_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tilNombrePersonajeFirebase">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tietEdadPersonajeFirebase"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:hint="Edad"
+                    android:maxLines="1" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilGeneroPersonajeFirebase"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="24dp"
+                app:startIconDrawable="@drawable/ic_gender"
+                app:endIconMode="clear_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tilEdadPersonajeFirebase">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tietGeneroPersonajeFirebase"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:hint="Género"
+                    android:maxLines="1" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilHistoriaPersonajeFirebase"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="24dp"
+                app:startIconDrawable="@drawable/ic_history"
+                app:endIconMode="clear_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tilGeneroPersonajeFirebase">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tietHistoriaPersonajeFirebase"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:hint="Historia"
+                    android:lines="2"
+                    android:maxLines="5" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilOcupacionPersonajeFirebase"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="24dp"
+                app:startIconDrawable="@drawable/ic_ocupacion"
+                app:endIconMode="clear_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tilHistoriaPersonajeFirebase">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tietOcupacionPersonajeFirebase"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:hint="Ocupación"
+                    android:maxLines="1" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilFrasePersonajeFirebase"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="24dp"
+                app:startIconDrawable="@drawable/ic_quote"
+                app:endIconMode="clear_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tilOcupacionPersonajeFirebase">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tietFrasePersonajeFirebase"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:hint="Frase"
+                    android:lines="2"
+                    android:maxLines="5" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilEstadoPersonajeFirebase"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="24dp"
+                app:startIconDrawable="@drawable/ic_state"
+                app:endIconMode="clear_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tilFrasePersonajeFirebase">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tietEstadoPersonajeFirebase"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:hint="Estado"
+                    android:maxLines="1" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tvImagenPersonajeFirebase"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Imagen"
+                android:textColor="?attr/colorPrimary"
+                android:textSize="16sp"
+                android:drawableStart="@drawable/ic_image"
+                android:drawablePadding="8dp"
+                android:layout_marginTop="36dp"
+                android:layout_marginStart="22dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tilEstadoPersonajeFirebase" />
+            
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAgregarImagenPersonaje"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agregar Imagen"
+                app:layout_constraintTop_toBottomOf="@id/tilEstadoPersonajeFirebase"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="26dp"
+                android:layout_marginLeft="200dp" />
+
+            <ImageView
+                android:id="@+id/imgPersonajeSeleccionado"
+                android:background="?attr/colorPrimary"
+                android:layout_width="170dp"
+                android:layout_height="250dp"
+                app:layout_constraintTop_toBottomOf="@id/tvImagenPersonajeFirebase"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="52dp" />
+            
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAgregarPersonajeFirebase"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Agregar Personaje"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@id/imgPersonajeSeleccionado"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginTop="42dp"
+                android:layout_marginBottom="20dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

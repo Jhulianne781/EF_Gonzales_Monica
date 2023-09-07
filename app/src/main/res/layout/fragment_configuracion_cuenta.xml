@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.ConfiguracionCuentaFragment"
+    android:background="?attr/colorTertiaryContainer">
+
+    <TextView
+        android:id="@+id/tvConfiguracionCuenta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Configuración de Cuenta"
+        android:textSize="23sp"
+        android:textColor="?attr/colorPrimary"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tvEditarInformacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Editar Información"
+        android:fontFamily="@font/cambay"
+        android:layout_below="@id/tvConfiguracionCuenta"
+        android:drawableStart="@drawable/ic_person"
+        android:drawablePadding="8dp"
+        android:layout_marginTop="36dp"
+        android:textSize="16sp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tvCambiarContraseña"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cambiar Contraseña"
+        android:fontFamily="@font/cambay"
+        android:layout_below="@id/tvEditarInformacion"
+        android:drawableStart="@drawable/ic_edit"
+        android:drawablePadding="8dp"
+        android:layout_marginTop="32dp"
+        android:textSize="16sp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tvInformacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Información"
+        android:fontFamily="@font/cambay"
+        android:layout_below="@id/tvCambiarContraseña"
+        android:drawableStart="@drawable/ic_info"
+        android:drawablePadding="8dp"
+        android:layout_marginTop="32dp"
+        android:textSize="16sp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tvNotificaciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notificaciones"
+        android:fontFamily="@font/cambay"
+        android:layout_below="@id/tvInformacion"
+        android:drawableStart="@drawable/ic_notifications"
+        android:drawablePadding="8dp"
+        android:layout_marginTop="32dp"
+        android:textSize="16sp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/switchNotifications"
+        android:backgroundTint="?attr/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvInformacion"
+        android:layout_toEndOf="@id/tvNotificaciones"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="203dp"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvAyuda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ayuda"
+        android:fontFamily="@font/cambay"
+        android:layout_below="@id/tvNotificaciones"
+        android:drawableStart="@drawable/ic_help"
+        android:drawablePadding="8dp"
+        android:layout_marginTop="32dp"
+        android:textSize="16sp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tvCerrarSesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cerrar Sesión"
+        android:fontFamily="@font/cambay"
+        android:layout_below="@id/tvAyuda"
+        android:drawableStart="@drawable/ic_logout"
+        android:drawablePadding="8dp"
+        android:layout_marginTop="32dp"
+        android:textSize="16sp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black" />
+
+    <ImageView
+        android:id="@+id/imgConfiguracionCuenta"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="@null"
+        android:src="@drawable/logo" />
+
+</RelativeLayout>

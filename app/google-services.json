@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "998684086356",
+    "project_id": "thesimpsonsapp-478bd",
+    "storage_bucket": "thesimpsonsapp-478bd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:998684086356:android:3b844585ae5e3c2f671dc1",
+        "android_client_info": {
+          "package_name": "com.ef.monicagb.thesimpsonsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "998684086356-k79b84l70i77ea8i06b5c98d0m0tql5p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ef.monicagb.thesimpsonsapp",
+            "certificate_hash": "7e2fb3ce840779a4c69836f721c45e077e6521a0"
+          }
+        },
+        {
+          "client_id": "998684086356-habm2n1q7ta43cemapognje7sgbpqu1s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRdOnSeN1lAagB3XlQh0z7NCqi2HVpm5s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "998684086356-habm2n1q7ta43cemapognje7sgbpqu1s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
